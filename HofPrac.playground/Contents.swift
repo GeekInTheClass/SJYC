@@ -51,10 +51,10 @@ print(mtpEven - mtpOdd)
  2. 각 종류의 금액 합이 5000원 이하인 선에서 최대한 많은 개수만큼 구매한다.
  5종류의 식료품당 단위 가격 정보를 활용하여 구매에 필요한 총 비용을 계산하시오.
  */
-let foods:Array<Int> = [ 1000, 1500, 4500, 2000, 3000 ]
+let foods:Array<Int> = [ 1000, 1500, 4500, 2500, 3000 ]
 
 sum = 0
-for i in 0 ... 5 {
+for i in 0 ... 4 {
     sum += foods[i] * (5000/foods[i])
 }
-
+print(sum)
